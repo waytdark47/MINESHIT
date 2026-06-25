@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моды - MINE$$$HIT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mods.css">
+</head>
+<body>
+    <!-- ===== НАВИГАЦИОННАЯ ПАНЕЛЬ ===== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">MINE$$$HIT</a>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#" id="helpBtn">Помощь</a></li>
+                <li><a href="spons.html">Спонсоры</a></li>
+                <li><a href="mods.html">Моды</a></li>
+            </ul>
+            
+            
+            <div class="nav-burger" id="burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== СТРАНИЦА МОДОВ ===== -->
+    <section class="mods-page">
+        <div class="container">
+            <h1 class="page-title">Моды на сервере</h1>
+            <p class="page-subtitle">Полный список установленных модов</p>
+            
+            <div class="mods-search">
+                <input type="text" id="modSearch" placeholder="🔍 Поиск модов..." class="search-input">
+            </div>
+
+            <div class="mods-grid" id="modsGrid">
+                <!-- ===== ОПТИМИЗАЦИЯ ===== -->
+                <div class="mod-card" data-name="AmbientSounds" data-desc="Добавляет атмосферные звуки ветер птицы вода в зависимости от биома">
+                    <div class="mod-info">
+                        <h3>AmbientSounds</h3>
+                        <p>Добавляет атмосферные звуки (ветер, птицы, вода) в зависимости от биома.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Chunky" data-desc="Предгенерация чанков для снижения лагов при исследовании мира">
+                    <div class="mod-info">
+                        <h3>Chunky</h3>
+                        <p>Предгенерация чанков для снижения лагов при исследовании мира.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Clumps" data-desc="Объединяет выпадающие шарики опыта в один чтобы уменьшить лаги">
+                    <div class="mod-info">
+                        <h3>Clumps</h3>
+                        <p>Объединяет выпадающие шарики опыта в один, чтобы уменьшить лаги.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Embeddium" data-desc="Форк Sodium оптимизирующий рендеринг и повышающий FPS">
+                    <div class="mod-info">
+                        <h3>Embeddium</h3>
+                        <p>Форк Sodium, оптимизирующий рендеринг и повышающий FPS.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Embeddium Extra" data-desc="Дополнительные настройки и фишки для Embeddium">
+                    <div class="mod-info">
+                        <h3>Embeddium Extra</h3>
+                        <p>Дополнительные настройки и фишки для Embeddium.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="EntityCulling" data-desc="Скрывает рендеринг сущностей за стенами для повышения FPS">
+   
+                    <div class="mod-info">
+                        <h3>EntityCulling</h3>
+                        <p>Скрывает рендеринг сущностей за стенами для повышения FPS.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Ferrite Core" data-desc="Оптимизирует использование памяти уменьшает потребление ОЗУ">
+           
+                    <div class="mod-info">
+                        <h3>Ferrite Core</h3>
+                        <p>Оптимизирует использование памяти (уменьшает потребление ОЗУ).</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="ModernFix" data-desc="Оптимизация производительности и исправление багов рендеринга">
+          
+                    <div class="mod-info">
+                        <h3>ModernFix</h3>
+                        <p>Оптимизация производительности и исправление багов рендеринга.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Oculus" data-desc="Порт шейдеров OptiFine для Fabric Forge поддержка шейдеров">
+              
+                    <div class="mod-info">
+                        <h3>Oculus</h3>
+                        <p>Порт шейдеров OptiFine для Fabric/Forge (поддержка шейдеров).</p>
+                    </div>
+                </div>
+
+                <!-- ===== БИОМЫ ===== -->
+                <div class="mod-card" data-name="Biomes O' Plenty" data-desc="Добавляет более 80 новых биомов с уникальной флорой деревьями и блоками">
+   
+                    <div class="mod-info">
+                        <h3>Biomes O' Plenty</h3>
+                        <p>Добавляет более 80 новых биомов с уникальной флорой, деревьями и блоками.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Oh The Biomes Weve Gone" data-desc="Ещё один масштабный биомный мод с новыми измерениями">
+         
+                    <div class="mod-info">
+                        <h3>Oh The Biomes We've Gone</h3>
+                        <p>Ещё один масштабный биомный мод с новыми измерениями.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Oh The Trees Youll Grow" data-desc="Добавляет десятки новых видов деревьев и саженцев">
+         
+                    <div class="mod-info">
+                        <h3>Oh The Trees You'll Grow</h3>
+                        <p>Добавляет десятки новых видов деревьев и саженцев.</p>
+                    </div>
+                </div>
+
+                <!-- ===== ТЕХНОЛОГИИ ===== -->
+                <div class="mod-card" data-name="Create" data-desc="Технологический мод с механикой вращения шестернями и кинетической энергией">
+        
+                    <div class="mod-info">
+                        <h3>Create</h3>
+                        <p>Технологический мод с механикой вращения, шестернями и кинетической энергией.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Create Big Cannons" data-desc="Дополнение к Create добавляет огромные пушки и артиллерию">
+      
+                    <div class="mod-info">
+                        <h3>Create Big Cannons</h3>
+                        <p>Дополнение к Create, добавляет огромные пушки и артиллерию.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Create Crafts & Additions" data-desc="Интеграция Create с ванильными крафтами и механизмами">
+             
+                    <div class="mod-info">
+                        <h3>Create Crafts & Additions</h3>
+                        <p>Интеграция Create с ванильными крафтами и механизмами.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Create Diesel Generators" data-desc="Добавляет дизельные генераторы для генерации энергии в Create">
+          
+                    <div class="mod-info">
+                        <h3>Create: Diesel Generators</h3>
+                        <p>Добавляет дизельные генераторы для генерации энергии в Create.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Create New Age" data-desc="Добавляет электричество и альтернативные источники энергии для Create">
+          
+                    <div class="mod-info">
+                        <h3>Create: New Age</h3>
+                        <p>Добавляет электричество и альтернативные источники энергии для Create.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Create Steam n Rails" data-desc="Улучшает железные дороги и добавляет паровозы в Create">
+       
+                    <div class="mod-info">
+                        <h3>Create: Steam 'n' Rails</h3>
+                        <p>Улучшает железные дороги и добавляет паровозы в Create.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Create The Factory Must Grow" data-desc="Добавляет новые механизмы для автоматизации фабрик">
+         
+                    <div class="mod-info">
+                        <h3>Create: The Factory Must Grow</h3>
+                        <p>Добавляет новые механизмы для автоматизации фабрик.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Create Ultimate Factory" data-desc="Расширяет производственные цепочки и многоступенчатые крафты">
+     
+                    <div class="mod-info">
+                        <h3>Create: Ultimate Factoy</h3>
+                        <p>Расширяет производственные цепочки и многоступенчатые крафты.</p>
+                    </div>
+                </div>
+
+                <!-- ===== БИБЛИОТЕКИ ===== -->
+                <div class="mod-card" data-name="Brandons Core" data-desc="Библиотека для модов созданных Brandon3055 ядро">
+       
+                    <div class="mod-info">
+                        <h3>Brandon's Core</h3>
+                        <p>Библиотека для модов, созданных Brandon3055 (ядро).</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Citadel" data-desc="Библиотека для модов использующих продвинутую анимацию сущностей">
+        
+                    <div class="mod-info">
+                        <h3>Citadel</h3>
+                        <p>Библиотека для модов, использующих продвинутую анимацию сущностей.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Cloth Config v10 API" data-desc="API для создания удобных экранов настроек модов">
+
+                    <div class="mod-info">
+                        <h3>Cloth Config v10 API</h3>
+                        <p>API для создания удобных экранов настроек модов.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="CodeChicken Lib" data-desc="Библиотека утилит для модов раньше использовалась в NEI">
+           
+                    <div class="mod-info">
+                        <h3>CodeChicken Lib</h3>
+                        <p>Библиотека утилит для модов (раньше использовалась в NEI).</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Collective" data-desc="Общая библиотека для многих модов от разработчика Serilum">
+             
+                    <div class="mod-info">
+                        <h3>Collective</h3>
+                        <p>Общая библиотека для многих модов от разработчика Serilum.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="CorgiLib" data-desc="Библиотека с полезными функциями для датапаков и модов">
+        
+                    <div class="mod-info">
+                        <h3>CorgiLib</h3>
+                        <p>Библиотека с полезными функциями для датапаков и модов.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="CreativeCore" data-desc="Библиотека для модов связанных с творческим режимом и рендерингом">
+        
+                    <div class="mod-info">
+                        <h3>CreativeCore</h3>
+                        <p>Библиотека для модов, связанных с творческим режимом и рендерингом.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="GeckoLib4" data-desc="Библиотека для анимированных сущностей и моделей в игре">
+             
+                    <div class="mod-info">
+                        <h3>GeckoLib4</h3>
+                        <p>Библиотека для анимированных сущностей и моделей в игре.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Library ferret" data-desc="Библиотека для модов от разработчика The_Ferret">
+       
+                    <div class="mod-info">
+                        <h3>Library ferret</h3>
+                        <p>Библиотека для модов от разработчика The_Ferret.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="mcef-libraries" data-desc="Библиотека для рендеринга веб страниц внутри игры">
+             
+                    <div class="mod-info">
+                        <h3>mcef-libraries</h3>
+                        <p>Библиотека для рендеринга веб-страниц внутри игры.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Ritchies Projectile Library" data-desc="Библиотека для снарядов и кастомных метательных предметов">
+           
+                    <div class="mod-info">
+                        <h3>Ritchie's Projectile Library</h3>
+                        <p>Библиотека для снарядов и кастомных метательных предметов.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="SuperMartijn642s Core Lib" data-desc="Библиотека для модов от SuperMartijn642">
+      
+                    <div class="mod-info">
+                        <h3>SuperMartijn642's Core Lib</h3>
+                        <p>Библиотека для модов от SuperMartijn642.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="TerraBlender" data-desc="Библиотека позволяющая биом модам работать вместе без конфликтов">
+       
+                    <div class="mod-info">
+                        <h3>TerraBlender</h3>
+                        <p>Библиотека, позволяющая биом-модам работать вместе без конфликтов.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Etcl" data-desc="Библиотека для модов использующих кастомную логику команд">
+     
+                    <div class="mod-info">
+                        <h3>Etcl</h3>
+                        <p>Библиотека для модов, использующих кастомную логику команд.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="PC" data-desc="Библиотека для модов связанных с персональными настройками игрока">
+      
+                    <div class="mod-info">
+                        <h3>PC</h3>
+                        <p>Библиотека для модов, связанных с персональными настройками игрока.</p>
+                    </div>
+                </div>
+
+                <!-- ===== КОСМЕТИКА ===== -->
+                <div class="mod-card" data-name="Ears" data-desc="Добавляет настраиваемые уши лисьи кроличьи и др для игроков">
+           
+                    <div class="mod-info">
+                        <h3>Ears</h3>
+                        <p>Добавляет настраиваемые уши (лисьи, кроличьи и др.) для игроков.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Emotecraft" data-desc="Позволяет игрокам использовать эмоции и анимации танцы приветствия">
+          
+                    <div class="mod-info">
+                        <h3>Emotecraft</h3>
+                        <p>Позволяет игрокам использовать эмоции и анимации (танцы, приветствия).</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Etched" data-desc="Позволяет создавать и воспроизводить кастомные музыкальные диски">
+       
+                    <div class="mod-info">
+                        <h3>Etched</h3>
+                        <p>Позволяет создавать и воспроизводить кастомные музыкальные диски.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Immersive Paintings" data-desc="Позволяет вешать картины с загруженными изображениями">
+        
+                    <div class="mod-info">
+                        <h3>Immersive Paintings</h3>
+                        <p>Позволяет вешать картины с загруженными изображениями.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Mc Paint" data-desc="Позволяет рисовать и создавать кастомные текстуры в игре">
+           
+                    <div class="mod-info">
+                        <h3>Mc Paint</h3>
+                        <p>Позволяет рисовать и создавать кастомные текстуры в игре.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Modern Decor Wooden" data-desc="Добавляет деревянную мебель и декор в современном стиле">
+         
+                    <div class="mod-info">
+                        <h3>Modern Decor Wooden</h3>
+                        <p>Добавляет деревянную мебель и декор в современном стиле.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="FURNITUREMO" data-desc="Добавляет множество функциональной мебели MrCrayfish а">
+       
+                    <div class="mod-info">
+                        <h3>FURNITUREMO</h3>
+                        <p>Добавляет множество функциональной мебели (MrCrayfish'а).</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="MrCrayfishs Furniture Mod" data-desc="Классический мод на мебель стулья столы техника">
+         
+                    <div class="mod-info">
+                        <h3>MrCrayfish's Furniture Mod</h3>
+                        <p>Классический мод на мебель (стулья, столы, техника).</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Player Animator" data-desc="Добавляет плавные анимации для игрока бег прыжки атака">
+      
+                    <div class="mod-info">
+                        <h3>Player Animator</h3>
+                        <p>Добавляет плавные анимации для игрока (бег, прыжки, атака).</p>
+                    </div>
+                </div>
+
+                <!-- ===== УТИЛИТЫ ===== -->
+                <div class="mod-card" data-name="BlueMap" data-desc="Интерактивная 3D карта мира в реальном времени через браузер">
+           
+                    <div class="mod-info">
+                        <h3>BlueMap</h3>
+                        <p>Интерактивная 3D-карта мира в реальном времени через браузер.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Carry On" data-desc="Позволяет поднимать и переносить сундуки мобов и другие сущности одной кнопкой">
+        
+                    <div class="mod-info">
+                        <h3>Carry On</h3>
+                        <p>Позволяет поднимать и переносить сундуки, мобов и другие сущности одной кнопкой.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Chat Heads" data-desc="Показывает головы игроков рядом с их сообщениями в чате">
+              
+                    <div class="mod-info">
+                        <h3>Chat Heads</h3>
+                        <p>Показывает головы игроков рядом с их сообщениями в чате.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Curios API" data-desc="Добавляет слоты аксессуаров кольца амулеты реликвии">
+            
+                    <div class="mod-info">
+                        <h3>Curios API</h3>
+                        <p>Добавляет слоты аксессуаров (кольца, амулеты, реликвии).</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Default Skill Trees" data-desc="Добавляет систему прокачки навыков с деревьями умений">
+                    <div class="mod-info">
+                        <h3>Default Skill Trees</h3>
+                        <p>Добавляет систему прокачки навыков с деревьями умений.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Drop Player Heads" data-desc="Позволяет получать голову игрока при его смерти">
+          
+                    <div class="mod-info">
+                        <h3>Drop Player Heads</h3>
+                        <p>Позволяет получать голову игрока при его смерти.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Gravestone Mod" data-desc="Создаёт могильный камень с инвентарём игрока после смерти">
+              
+                    <div class="mod-info">
+                        <h3>Gravestone Mod</h3>
+                        <p>Создаёт могильный камень с инвентарём игрока после смерти.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Infinite Trading" data-desc="Убирает лимит торговли у жителей можно торговать бесконечно">
+           
+                    <div class="mod-info">
+                        <h3>Infinite Trading</h3>
+                        <p>Убирает лимит торговли у жителей (можно торговать бесконечно).</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Iron Chests" data-desc="Добавляет сундуки из разных металлов с большим объёмом">
+        
+                    <div class="mod-info">
+                        <h3>Iron Chests</h3>
+                        <p>Добавляет сундуки из разных металлов с большим объёмом.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Iron Furnaces" data-desc="Добавляет печи из железа золота алмазов с разной скоростью плавки">
+           
+                    <div class="mod-info">
+                        <h3>Iron Furnaces</h3>
+                        <p>Добавляет печи из железа, золота, алмазов с разной скоростью плавки.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Jade" data-desc="Показывает информацию о блоке сущности на которую смотришь аналог HWYLA">
+         
+                    <div class="mod-info">
+                        <h3>Jade</h3>
+                        <p>Показывает информацию о блоке/сущности, на которую смотришь (аналог HWYLA).</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Just Enough Items" data-desc="Показывает все рецепты и предметы в игре через меню">
+      
+                    <div class="mod-info">
+                        <h3>Just Enough Items</h3>
+                        <p>Показывает все рецепты и предметы в игре через меню.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="LuckPerms" data-desc="Плагин для прав и пермишенов используется на серверах">
+
+                    <div class="mod-info">
+                        <h3>LuckPerms</h3>
+                        <p>Плагин для прав и пермишенов (используется на серверах).</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="ParCool" data-desc="Добавляет паркур элементы кувырки ползание скольжение">
+         
+                    <div class="mod-info">
+                        <h3>ParCool!</h3>
+                        <p>Добавляет паркур-элементы (кувырки, ползание, скольжение).</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Portable Mobs" data-desc="Позволяет забирать мобов в карман и выпускать обратно">
+    
+                    <div class="mod-info">
+                        <h3>Portable Mobs</h3>
+                        <p>Позволяет забирать мобов в карман и выпускать обратно.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Pufferfishs Attributes" data-desc="Расширяет системные атрибуты здоровье скорость и тд">
+        
+                    <div class="mod-info">
+                        <h3>Pufferfish's Attributes</h3>
+                        <p>Расширяет системные атрибуты (здоровье, скорость и т.д.).</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Pufferfishs Skills" data-desc="Добавляет навыки и умения прокачиваемые за опыт">
+         
+                    <div class="mod-info">
+                        <h3>Pufferfish's Skills</h3>
+                        <p>Добавляет навыки и умения, прокачиваемые за опыт.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Quick Skin" data-desc="Позволяет быстро менять свой скин без перезапуска игры">
+             
+                    <div class="mod-info">
+                        <h3>Quick Skin</h3>
+                        <p>Позволяет быстро менять свой скин без перезапуска игры.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Room For Two" data-desc="Позволяет двум игрокам сидеть на одном блоке стуле">
+           
+                    <div class="mod-info">
+                        <h3>Room For Two</h3>
+                        <p>Позволяет двум игрокам сидеть на одном блоке/стуле.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Server Tab Info" data-desc="Показывает больше информации о сервере на вкладке Tab">
+          
+                    <div class="mod-info">
+                        <h3>Server Tab Info</h3>
+                        <p>Показывает больше информации о сервере на вкладке Tab.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Simple Voice Chat" data-desc="Добавляет голосовой чат в игру с интеграцией">
+    
+                    <div class="mod-info">
+                        <h3>Simple Voice Chat</h3>
+                        <p>Добавляет голосовой чат в игру (с интеграцией).</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Sit Anywhere" data-desc="Позволяет сесть на любую поверхность пол ступени блоки">
+         
+                    <div class="mod-info">
+                        <h3>Sit Anywhere!</h3>
+                        <p>Позволяет сесть на любую поверхность (пол, ступени, блоки).</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="SkinRestorer" data-desc="Восстанавливает скины игроков актуально для офлайн серверов">
+       
+                    <div class="mod-info">
+                        <h3>SkinRestorer</h3>
+                        <p>Восстанавливает скины игроков (актуально для офлайн-серверов).</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Travelers Backpack" data-desc="Добавляет рюкзак с инвентарём который можно носить на спине">
+            
+                    <div class="mod-info">
+                        <h3>Traveler's Backpack</h3>
+                        <p>Добавляет рюкзак с инвентарём, который можно носить на спине.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="WI Zoom" data-desc="Добавляет приближение камеры по нажатию клавиши зум">
+     
+                    <div class="mod-info">
+                        <h3>WI Zoom</h3>
+                        <p>Добавляет приближение камеры по нажатию клавиши (зум).</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Xaeros Minimap" data-desc="Добавляет мини карту в углу экрана с настройками">
+        
+                    <div class="mod-info">
+                        <h3>Xaero's Minimap</h3>
+                        <p>Добавляет мини-карту в углу экрана с настройками.</p>
+                    </div>
+                </div>
+
+                <div class="mod-card" data-name="Xaeros World Map" data-desc="Добавляет полноэкранную карту мира с сохранением данных">
+        
+                    <div class="mod-info">
+                        <h3>Xaero's World Map</h3>
+                        <p>Добавляет полноэкранную карту мира с сохранением данных.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mods-placeholder">
+                <p>📌 Всего модов: <span id="modCount">0</span></p>
+            </div>
+        </div>
+    </section>
+    <!-- ===== МОДАЛЬНОЕ ОКНО ПОМОЩИ ===== -->
+ <div class="modal-overlay" id="helpModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Помощь</h2>
+                <button class="modal-close" id="helpClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Хз позвони по телефону доверия</p>
+                <p style="color: #888; font-size: 14px; margin-top: 10px;">
+                    <img src="images/oluh.gif">
+                </p>
+            </div>
+        </div>
+    </div>
+<!-- ===== ФУТЕР ===== -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-images">
+            <div class="footer-left">
+                <div class="footer-img">
+                    <img src="images/noname.jpg" alt="noname">
+                </div>
+                <div class="footer-img">
+                    <img src="images/dedd.jpg" alt="dedd">
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-img">
+                    <img src="images/pegi.jpg" alt="pegi">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- ===== ПОДКЛЮЧАЕМ JS ===== -->
+    <script src="script.js"></script>
+</body>
+</html>

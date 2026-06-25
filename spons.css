@@ -1,0 +1,91 @@
+.spons-page {
+    padding: 100px 20px 60px;
+    background: linear-gradient(135deg, #0a0a0a, #1a1a1a 50%, #0d0d0d);
+    min-height: 100vh;
+    color: #fff;
+    font-family: 'MINECRAFT', sans-serif;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #f7c948, #f59e0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 2px;
+}
+
+.page-subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.spons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.spons-card {
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.spons-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.spons-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .spons-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .spons-page {
+        padding: 80px 15px 40px;
+    }
+    
+    .page-title {
+        font-size: 32px;
+    }
+    
+    .spons-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .spons-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .page-title {
+        font-size: 24px;
+    }
+    
+    .page-subtitle {
+        font-size: 14px;
+    }
+}
