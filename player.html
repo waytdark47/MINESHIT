@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINE$$$HIT</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        html,body{width:100%;height:100%;overflow:hidden;background:#0a0a0a}
+        #siteFrame{width:100%;height:100%;border:none}
+        .music-btn{position:fixed;bottom:30px;right:30px;z-index:999;width:50px;height:50px;border-radius:50%;border:2px solid rgba(255,255,255,0.2);background:rgba(0,0,0,0.6);backdrop-filter:blur(10px);color:#fff;font-size:24px;cursor:pointer;transition:all .3s ease;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 15px rgba(0,0,0,0.3);user-select:none}
+        .music-btn:hover{transform:scale(1.1);border-color:#46aef3;background:rgba(0,0,0,0.8)}
+        .music-btn.playing{border-color:#4ade80;box-shadow:0 0 20px rgba(74,222,128,0.2)}
+        @media(max-width:480px){.music-btn{bottom:20px;right:20px;width:40px;height:40px;font-size:18px}}
+    </style>
+</head>
+<body>
+    <iframe id="siteFrame" src="index.html"></iframe>
+    
+    <audio id="bgMusic" loop>
+        <source src="sounds/Tobu_-_Candyland_64401768.mp3" type="audio/mpeg">
+    </audio>
+    
+    <button id="musicToggle" class="music-btn" title="Включить/выключить музыку">🔇</button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            const a=document.getElementById('bgMusic'),b=document.getElementById('musicToggle');
+            if(!a||!b)return;
+            let c=false;
+            a.volume=0.3;
+            a.play().then(()=>{c=true;b.textContent='🎵';b.classList.add('playing')}).catch(()=>{c=false;b.textContent='🔇';b.classList.remove('playing')});
+            b.addEventListener('click',function(){
+                if(c){a.pause();c=false;this.textContent='🔇';this.classList.remove('playing')}
+                else{a.play();c=true;this.textContent='🎵';this.classList.add('playing')}
+            })
+        });
+    </script>
+</body>
+</html>
