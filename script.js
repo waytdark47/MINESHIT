@@ -154,3 +154,42 @@ document.addEventListener('DOMContentLoaded', function() {
     
     updateModCount();
 });
+// ===== ФОНОВАЯ МУЗЫКА =====
+document.addEventListener('DOMContentLoaded', function() {
+    const audio = document.getElementById('bgMusic');
+    const musicBtn = document.getElementById('musicToggle');
+    
+    if (!audio || !musicBtn) return;
+    
+    let isPlaying = false;
+    
+    // Громкость 30%
+    audio.volume = 0.3;
+    
+    // Пытаемся автоматически запустить
+    audio.play().then(() => {
+        isPlaying = true;
+        musicBtn.textContent = '🎵';
+        musicBtn.classList.add('playing');
+    }).catch(() => {
+        // Браузер заблокировал автозапуск
+        isPlaying = false;
+        musicBtn.textContent = '🔇';
+        musicBtn.classList.remove('playing');
+    });
+    
+    // Кнопка управления
+    musicBtn.addEventListener('click', function() {
+        if (isPlaying) {
+            audio.pause();
+            isPlaying = false;
+            this.textContent = '🔇';
+            this.classList.remove('playing');
+        } else {
+            audio.play();
+            isPlaying = true;
+            this.textContent = '🎵';
+            this.classList.add('playing');
+        }
+    });
+});
